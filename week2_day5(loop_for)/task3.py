@@ -1,5 +1,3 @@
-# L = int(input())
-# B = int(input())
 numbers = list(map(int,input().split()))
 a = numbers[0]
 b = numbers[1]
