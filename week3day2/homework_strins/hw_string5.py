@@ -1,2 +1,4 @@
-str = "Vasya is the best X football player. VasyXa is very strong plXayer. Vasya has X a golden ball award. Vasya WOOOSH!"
-print(str.count('X'))
+str = "Vasya is the best football player. Vasya is very strong player. Vasya has a golden ball award. Vasya WOOOSH!"
+X = 'dsfsafsdf'
+
+print(str.count(X))
