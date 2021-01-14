@@ -14,7 +14,7 @@ mails = ['hello sophie how are you',
 def spam(mails_list:list):
     for str1 in mails_list:
         str1 = str1.lower()
-        if "sos" in str1 or "urgent" in str1 or "help" in str1:
+        if "sos" in str1 or "urgent" in str1 or "help" in str1 or str1.endswith('!!!'):
             file1 = open('spam.txt','a')
             file1.write(str1 + '\n')
         elif str1.startswith('sales') or "buy right now" in str1:
