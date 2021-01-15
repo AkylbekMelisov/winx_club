@@ -1,9 +1,3 @@
-str1 = "hello world"
-a = str1.split()[0]
-print(a)
-
-
-
 def phone_number(number):
     if len(number) == 13 and number.startswith('+996'):
         print(number)
