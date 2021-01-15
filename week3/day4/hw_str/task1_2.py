@@ -1,11 +1,21 @@
 str1 = "hello world"
-string1 = str1[0]
-print(string1)
+a = str1.split()[0]
+print(a)
 
-phone_number = int(input("Введите номер телефона ""+"))
-str2 = str(phone_number)
 
-if len(str2) == 10:
-    print('Ok')
-else:
-    print('Введите 10 символов')
+
+def phone_number(number):
+    if len(number) == 13 and number.startswith('+996'):
+        print(number)
+    elif len(number) == 10 and number.startswith('0'):
+        number = number.replace("0","+996")
+        print(number)
+    elif len(number) == 9:
+        number = '+996' + number
+        print(number)
+    elif len(number) == 12 and number.startswith('996'):
+        number = '+' + number
+        print(number)
+    else:
+        print('не верный номер')
+phone_number('996555666555')
